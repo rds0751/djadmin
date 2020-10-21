@@ -27,7 +27,7 @@ class Visitor(models.Model):
     visit_datetime = models.DateTimeField(_('Login Date Time'), auto_now=True)
     browser = models.CharField(_('Browser'), max_length=30, null=True)
     browser_version = models.CharField(_('Browser Version'), max_length=20, null=True)
-    ipaddress = models.CharField(_('IP Address'), max_length=20, null=True)
+    ipaddress = models.CharField(_('IP Address'), max_length=100, null=True)
     os_info = models.CharField(_('OS Information'), max_length=30, null=True)
     os_info_version = models.CharField(_('OS Version'), max_length=20, null=True)
     device_type = models.CharField(_('Device Type'), max_length=20,
